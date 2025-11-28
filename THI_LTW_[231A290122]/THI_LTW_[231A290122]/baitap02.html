@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 02 - TODO MATRIX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- CỘT INFO -->
+    <div class="info-column">
+        <img src="images/avatar.jpg" class="avatar">
+        <h2>Họ tên: Nguyễn Huỳnh Phát</h2>
+        <h3>MSSV: 231A290122</h3>
+    </div>
+
+    <!-- CỘT TASK BOARD -->
+    <div class="task-column">
+
+        <!-- Form nhập -->
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Nhập tên công việc">
+            <select id="priority">
+                <option value="1">1 - Quan trọng & Khẩn cấp</option>
+                <option value="2">2 - Quan trọng - Không khẩn cấp</option>
+                <option value="3">3 - Không quan trọng - Khẩn cấp</option>
+                <option value="4">4 - Không quan trọng - Không khẩn cấp</option>
+            </select>
+            <button onclick="addTask()">Thêm</button>
+        </div>
+
+        <!-- Ma trận Eisenhower -->
+        <div class="matrix">
+
+            <div class="box" id="p1">
+                <h3>Quan trọng & Khẩn cấp</h3>
+                <div class="task-list"></div>
+            </div>
+
+            <div class="box" id="p2">
+                <h3>Quan trọng - Không khẩn cấp</h3>
+                <div class="task-list"></div>
+            </div>
+
+            <div class="box" id="p3">
+                <h3>Không quan trọng - Khẩn cấp</h3>
+                <div class="task-list"></div>
+            </div>
+
+            <div class="box" id="p4">
+                <h3>Không quan trọng - Không khẩn cấp</h3>
+                <div class="task-list"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
